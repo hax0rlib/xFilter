@@ -12,7 +12,7 @@ class Filter
     /**
      * @var messages all messages of function EmailFilter
      */
-    private static $messages = [];
+    private static $messages = array();
 
 
     public static function XSSFilter()
