@@ -29,11 +29,11 @@ class Filter
     public static function EmailFilter($email)
     {
         if(filter_var($email, FILTER_VALIDATE_EMAIL)) {
-            $messages[0] = "Email Valido!";
+            $this->messages[0] = "Email Valido!";
             print($this->$messages[0]);
 
         }else {
-           $messages[1] = "Email Invalido";
+           $this->messages[1] = "Email Invalido";
            print($this->$messages[1]);
 
         }
