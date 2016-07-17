@@ -112,8 +112,13 @@ boolean false
 * Standardized return types according to function implementation
 * Added documentation
 
+## 0.1.3 ##
+* Fix bugs
+* New Documentation in Code
+
 ## Contributors
 
 [hax0rlib](https://github.com/hax0rlib), [IRDeNial](https://github.com/IRDeNial)
 
-Documentation written by [IRDeNial](https://github.com/IRDeNial).
+Documentation in GitHub written by [IRDeNial](https://github.com/IRDeNial).
+Documentation in Code written by [hax0rlib](https://github.com/hax0rlib).
