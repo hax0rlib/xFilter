@@ -3,7 +3,7 @@
 /**
  * @package Class Filter
  * @author Hax0rlib | IRDeNial
- * @version 0.1.2
+ * @version 0.1.3
  */
 
 namespace Config;
