@@ -3,7 +3,7 @@
 /**
  * @package Class Filter
  * @author Hax0rlib | IRDeNial
- * @version 0.1.3
+ * @version 0.1.4
  */
 
 namespace Config;
@@ -20,7 +20,7 @@ namespace Config;
          */
         public static function XSSFilter($val)
         {
-            return htmlspecialchars($val, ENT_QUOTES, 'UTF-8');
+            return htmlEntities($val, ENT_QUOTES);
         }
 
         /**
