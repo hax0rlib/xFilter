@@ -112,9 +112,12 @@ boolean false
 * Standardized return types according to function implementation
 * Added documentation
 
-## 0.1.3 ##
+** 0.1.3 **
 * Fix bugs
 * New Documentation in Code
+
+** 0.1.4 **
+* Fix bugs
 
 ## Contributors
 
