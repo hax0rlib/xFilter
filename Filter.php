@@ -3,11 +3,8 @@
 /**
  * @package Class Filter
  * @author Hax0rlib | IRDeNial
- * @version 0.1.4
+ * @version 0.1.5
  */
-
-namespace Config;
-
 
     class Filter
     {
@@ -18,9 +15,21 @@ namespace Config;
          * @param $val
          * @return string
          */
-        public static function XSSFilter($val)
+        public static function XSSFilter(&$val) : string
         {
-            return htmlEntities($val, ENT_QUOTES);
+            if (is_string($val)) {
+
+                $val = htmlspecialchars($val, ENT_QUOTES);
+
+            } elseif (is_array($val) || is_object($val)) {
+
+                    foreach ($val as &$valueInValue) {
+
+                        self::XSSFilter($valueInValue);
+                    }
+            }
+
+            return $val;
         }
 
         /**
@@ -29,7 +38,7 @@ namespace Config;
          * @param $val
          * @return bool
          */
-        public static function EmailValidate($val)
+        public static function EmailValidate(string $val) : bool
         {
             return (bool)filter_var($val, FILTER_VALIDATE_EMAIL);
         }
@@ -41,7 +50,7 @@ namespace Config;
          * @param $flags
          * @return bool
          */
-        public static function IPValidate($val, $flags)
+        public static function IPValidate($val, $flags) : bool
         {
             $flgs = 0;
             switch ($flags) {
