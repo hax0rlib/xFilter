@@ -76,8 +76,8 @@
         /**
         * Função para setar permissões em diretórios
         *
-        * @param string $pathName
-        * @param int $perm
+        * @param string $folder
+        * @param int    $perm
         *
         **/
         public static function setDirPerm(string $folder, int $perm)
