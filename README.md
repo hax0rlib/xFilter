@@ -1,8 +1,8 @@
-# xFilter
+# xSecurity
 
 Filter to validate input to applications.
 
-## Methods
+## Methods (Metódos)
 
 ** XSSFilter **
 ```
@@ -40,7 +40,7 @@ Use:
     Filter::IPValidate($val,$flags);
 ```
 
-## Implementation
+## Implementation (Implementação)
 
 ** XSSFilter **
 ```
@@ -103,7 +103,7 @@ boolean true
 boolean false
 ```
 
-## Changelog
+## Changelog (Logs)
 ** 0.1.1 **
 * Initial version
 
@@ -119,7 +119,11 @@ boolean false
 ** 0.1.4 **
 * Fix bugs
 
-## Contributors
+** 0.1.5 **
+* Implement PHP7
+* New functions (we will implement in the documentation soon)
+
+## Contributors (Contribuidores)
 
 [hax0rlib](https://github.com/hax0rlib), [IRDeNial](https://github.com/IRDeNial)
 
